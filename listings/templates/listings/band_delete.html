@@ -1,0 +1,7 @@
+<h1>Supprimer le mets</h1>
+<p>Etes-vous sûr de vouloir supprimer le mets : {{ band.name }} ?</p>
+
+<form action="" method="post">
+{% csrf_token %}
+<input type="submit" value="Supprimer">
+</form>

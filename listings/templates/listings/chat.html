@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Interface</title>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include htmx -->
+  <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+  <!-- Configure CSRF Token -->
+      <!-- Inclure Bootstrap JavaScript -->
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  </head>
+<body>
+    <div class="container mt-5">
+    <div class="card">
+    <div class="card-header">
+      Chat
+    </div>
+ <div class="card-body" id="panel">
+   <!-- Display chat ub
+    here -->
+      <div id="chat-messages">
+        {% for chat in chats %}
+          <div class="alert alert-primary text-center d-flex justify-content-between"  role="alert">
+            {{ chat.content }}
+            <button class="btn btn-danger" type="button" hx-get="{% url 'delete_chat' chat.id %}" 
+            hx-target="closest div"hx-swap="outerHTML">Supprimer</button>
+          </div>
+        {% endfor %}
+      </div>
+      <!-- Form for sending new messages -->
+      <form id="chat-form" 
+      method="POST" 
+      hx-post="{% url 'chat' %}" 
+      hx-trigger="click"
+      hx-swap="outerHTML" 
+      hx-target="#panel"
+      hx-select="#panel">
+          {% csrf_token %}
+
+          <div class="form-group">
+            <textarea class="form-control" id="chat-input" rows="3" 
+            placeholder="Type your message here..." name="content" 
+            hx-vals='{"content": this.value}'></textarea>
+          </div>
+
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+ </div>
+ </div>
+ </div>
+ <!-- Include Bootstrap JS -->
+</body>
+</html>

@@ -1,0 +1,302 @@
+
+<html>
+    <head><title>Blog</title></head>
+    <body>
+        {% extends 'listings/base.html' %}
+
+        {% block content %}
+        <header >
+          <div class="container">
+            <div class="bg-gradient" >
+            <h1 class="col-x* col-sm* col-md* col-lg* text-center">
+              BIENVENUE SUR KULIN'ARTS
+            </h1>
+
+          </div>
+        
+          </div>
+      </header>
+    
+      <main>
+    
+
+<section id="portfolio" class="py-5  ">
+  <div class="container">
+  
+    <div class="row gy-4 gy-md-0 mt-4 ">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+          <h5 class="card-title">Projet 1</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet1"
+         aria-controls="infoProjet1">En savoir plus</a>
+    </div>
+   <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet1"
+       aria-labelledby="titelProjet1">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="titelProjet1">Projet 1</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- Carousel -->
+    <div id="carouselProject1" class="carousel slide shadow h-100"
+         data-bs-ride="carousel" data-bs-touch="true">
+        <div class="carousel-inner h-100">
+     <div class="carousel-item h-100 active" data-bs-interval="2000">
+      <img src="https://picsum.photos/1920/1080?random=1"
+       class="d-block w-100" alt="Image slide 1">
+       <div class="carousel-caption d-none d-md-block">
+        <h5>Slide 1</h5>
+     <p>blablabla.</p>
+   </div>
+   </div>
+   <div class="carousel-item h-100" data-bs-interval="2000">
+            <img src="https://picsum.photos/1920/1080?random=2"
+                 class="d-block w-100" alt="Image slide 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Slide 2</h5>
+                <p>blablabla.</p>
+            </div>
+        </div>
+        <div class="carousel-item h-100">
+            <img src="https://picsum.photos/1920/1080?random=3"
+                 class="d-block w-100" alt="Image slide 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Slide 3</h5>
+                <p>blablabla.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button"
+              data-bs-target="#carouselProject1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselProject1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=" col-xs-12 col-sm-6 col-md-4 col-lg-3">
+     <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"> Projet 2 </h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet2"
+           href="#" class="btn btn-primary">En savoir plus</a>
+     </div>
+     <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet2"
+       aria-labelledby="titelProjet2">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="titelProjet2">Projet 2</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- Carousel -->
+    <div id="carouselProject2" class="carousel slide shadow h-100"
+         data-bs-ride="carousel" data-bs-touch="true">
+        <div class="carousel-inner h-100">
+     <div class="carousel-item h-100 active" data-bs-interval="2000">
+      <img src="https://picsum.photos/1920/1080?random=1"
+       class="d-block w-100" alt="Image slide 1">
+       <div class="carousel-caption d-none d-md-block">
+        <h5>Slide 1</h5>
+     <p>blablabla.</p>
+   </div>
+   </div>
+   <div class="carousel-item h-100" data-bs-interval="2000">
+            <img src="https://picsum.photos/1920/1080?random=2"
+                 class="d-block w-100" alt="Image slide 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Slide 2</h5>
+                <p>blablabla.</p>
+            </div>
+        </div>
+        <div class="carousel-item h-100">
+            <img src="https://picsum.photos/1920/1080?random=3"
+                 class="d-block w-100" alt="Image slide 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Slide 3</h5>
+                <p>blablabla.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button"
+              data-bs-target="#carouselProject2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselProject2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 ">
+     <div class="card">
+       <img src="..." class="card-img-top" alt="...">
+         <div class="card-body">
+         <h5 class="card-title">Projet 3</h5>          
+         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+         <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet3"
+         href="#" class="btn btn-primary">En savoir plus</a>
+      </div>
+      <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet3"
+       aria-labelledby="titelProjet3">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="titelProjet3">Projet 3</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- Carousel -->
+    <div id="carouselProject3" class="carousel slide shadow h-100"
+         data-bs-ride="carousel" data-bs-touch="true">
+        <div class="carousel-inner h-100">
+     <div class="carousel-item h-100 active" data-bs-interval="2000">
+      <img src="https://picsum.photos/1920/1080?random=1"
+       class="d-block w-100" alt="Image slide 1">
+       <div class="carousel-caption d-none d-md-block">
+        <h5>Slide 1</h5>
+     <p>blablabla.</p>
+   </div>
+   </div>
+   <div class="carousel-item h-100" data-bs-interval="2000">
+            <img src="https://picsum.photos/1920/1080?random=2"
+                 class="d-block w-100" alt="Image slide 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Slide 2</h5>
+                <p>blablabla.</p>
+            </div>
+        </div>
+        <div class="carousel-item h-100">
+            <img src="https://picsum.photos/1920/1080?random=3"
+                 class="d-block w-100" alt="Image slide 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Slide 3</h5>
+                <p>blablabla.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button"
+              data-bs-target="#carouselProject3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselProject3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Projet 4</h5>
+         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+         <a class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#infoProjet4"
+         href="#" class="btn btn-primary">En savoir plus</a>
+    </div>
+    <div class="offcanvas offcanvas-bottom h-100" tabindex="-1" id="infoProjet4"
+       aria-labelledby="titelProjet4">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="titelProjet4">Projet 4</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <!-- Carousel -->
+    <div id="carouselProject4" class="carousel slide shadow h-100"
+         data-bs-ride="carousel" data-bs-touch="true">
+        <div class="carousel-inner h-100">
+     <div class="carousel-item h-100 active" data-bs-interval="2000">
+      <img src="https://picsum.photos/1920/1080?random=1"
+       class="d-block w-100" alt="Image slide 1">
+       <div class="carousel-caption d-none d-md-block">
+        <h5>Slide 1</h5>
+     <p>blablabla.</p>
+   </div>
+   </div>
+   <div class="carousel-item h-100" data-bs-interval="2000">
+            <img src="https://picsum.photos/1920/1080?random=2"
+                 class="d-block w-100" alt="Image slide 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Slide 2</h5>
+                <p>blablabla.</p>
+            </div>
+        </div>
+        <div class="carousel-item h-100">
+            <img src="https://picsum.photos/1920/1080?random=3"
+                 class="d-block w-100" alt="Image slide 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Slide 3</h5>
+                <p>blablabla.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button"
+              data-bs-target="#carouselProject4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselProject4" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ </section>
+
+</main>
+<footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous">
+</script>
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+
+
+      </footer>
+
+
+        {% endblock %}
+
+
+
+    </body>
+</html>

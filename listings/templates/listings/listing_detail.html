@@ -1,0 +1,17 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+ <h2>{{ listing.name }}</h2>
+ <ul>
+    <li>Description : {{ listing.description }}</li>
+    <li>Type : {{ listing.get_type_display }}</li>
+    <h1>Recette</h1>
+    <p>{{ listing.recipe }}</p>
+    <a href="{% url 'listing-update' listing.id %}">Éditer une boisson</a>
+
+    <a href="{% url 'listing-list' %}">Retour à toutes les boisson</a>
+
+
+   </ul>
+ 
+{% endblock %}

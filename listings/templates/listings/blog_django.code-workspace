@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../../jquery"
+		},
+		{
+			"path": "../../../../../../sql"
+		},
+		{
+			"path": "../../../../../../tutos"
+		},
+		{
+			"path": "../../../../../../Projet_django/django-web-app"
+		}
+	],
+	"settings": {
+		"workbench.preferredHighContrastColorTheme": "Default Dark Modern",
+		"workbench.preferredHighContrastLightColorTheme": "Default Dark Modern",
+		"workbench.colorTheme": "Default Dark Modern"
+	}
+}

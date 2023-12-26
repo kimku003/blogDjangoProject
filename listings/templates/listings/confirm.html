@@ -1,0 +1,30 @@
+
+{% extends 'listings/base.html' %}
+
+{% block content %}
+<h1>Do you want to confirm?</h1>
+<form action="" method="get" novalidate>
+{% csrf_token %}
+{{ form.as_p }}
+<!--<input type="submit" value="Cancel">-->
+<!--<input type="submit" value="Confirm">-->
+<a href="{% url 'contact' %}">Cancel</a>
+<a href="{% url 'contact' %}">Confirm</a>
+
+</form>
+{% endblock %}
+<!--
+
+<div hx-confirm="Are you sure?">
+    <button hx-delete="/account">
+        Delete My Account
+    </button>
+    <button hx-put="/account">
+        Update My Account
+    </button>
+    <button hx-confirm="unset" hx-get="/">
+        Cancel
+    </button>
+</div>
+
+-->

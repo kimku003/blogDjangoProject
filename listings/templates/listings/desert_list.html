@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+        <title>Merchex</title>
+    </head>
+    <body>
+        {% extends 'listings/base.html' %}
+
+        {% block content %}
+        
+        <h1>Desserts</h1>
+        <a href="{% url 'desert-create' %}">Créer un nouveau dessert</a>
+
+            <ul>
+                {% for desert in deserts %}
+                <li>
+                    <a href="{% url 'desert-detail' desert.id %}">{{ desert.name }}</a>
+                   - <a href="{% url 'desert-update' desert.id %}">[modifier]</a>
+                   - <a href="{% url 'desert-delete' desert.id %}">[supprimer]</a>
+
+                </li>
+            {% endfor %}
+            
+        </ul>
+        {% endblock %}
+           
+    </body>
+</html>

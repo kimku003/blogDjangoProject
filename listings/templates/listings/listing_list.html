@@ -1,0 +1,28 @@
+
+<html>
+    <head><title>Merchex</title></head>
+    <body>
+        {% extends 'listings/base.html' %}
+
+        {% block content %}
+        
+        <h1>Boissons</h1>
+        <a href="{% url 'listing-create' %}">Créer une nouvelle Boissons</a>
+
+            <ul>
+                {% for listing in listings %}
+               
+                <li>
+                    <a href="{% url 'listing-detail' listing.id %}">{{ listing.name }}</a>
+                    <a href="{% url 'listing-update' listing.id %}">[modifier]</a>
+                    <a href="{% url 'listing-delete' listing.id %}">[supprimer]</a>
+
+                </li>
+                
+                {% endfor %}
+           
+        </ul>
+        {% endblock %}
+            
+    </body>
+</html>

@@ -1,0 +1,7 @@
+<h1>Supprimer le dessert</h1>
+<p>Etes-vous sûr de vouloir supprimer le dessert : {{ desert.name }} ?</p>
+
+<form action="" method="post">
+{% csrf_token %}
+<input type="submit" value="Supprimer">
+</form>

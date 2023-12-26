@@ -1,0 +1,20 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+ <h2>{{ desert.name }}</h2>
+ <ul>
+    <li>Description : {{ desert.description }}</li>
+    <li>Type : {{ desert.get_type_display }}</li>
+    <h1> Recette</h1>
+
+    <p>{{ desert.recipe }}</p>
+
+
+    <a href="{% url 'desert-update' desert.id %}">Modifier cet amuse-gueule</a>
+    <a href="{% url 'desert-delete' desert.id %}">Supprimer l'amuse-gueule</a>
+    <a href="{% url 'desert-list' %}">Retourner à la liste des amuses-gueule</a>
+
+
+   </ul>
+   
+{% endblock %}    
